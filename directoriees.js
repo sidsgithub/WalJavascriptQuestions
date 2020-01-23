@@ -8,6 +8,7 @@ async function print(path,s) {
     //dirent are objects for directory object
     for await (const dirent of dir) {
         if(i<9){
+            // console.log(typeof(dirent))
             console.log(indent(s)+dirent.name)   
         }
         else{
